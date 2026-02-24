@@ -3,33 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation </title>
+    <title>Responsive Design Introduction</title>
     <style>
-        .animated-box{
-            width: 150px;
-            height:  150px;
-            background-color: brown;
-            animation-name: moveFade;
-            animation-timing-function: ease-in-out;
-            animation-delay: 1s;
-            animation-fill-mode: both;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            transition: transform 0.5s ease;
-            margin: 20px;
+    .box{
+         background-color:brown;
+         color:black;
+         padding:20px;
+         margin:10px;
+
+    }
+    .container{
+        width:90%;
+        margin:auto;
+        background-color:rgb(183, 124, 15);
+        padding:20px;
+    }
+    @media screen and(min-width:600px){
+        .container{
+            display:flex
+            justify content:space-between;
         }
-        @keyframes moveFade {
-            0%{transform: translate(0); opacity:1;}
-            100%{transform: translate(200px); opacity:0.3;}
-            
-        }
-    
-        }
-    </style>
-</head>
+    }
+    .box{
+        width:30%;
+    }
+</style>
 <body>
-    <h2>Animated Functions</h2>
-    <div class="animated-box"></div>
-    
+    <div class="container">
+    <div class="box">Box1</div>
+    <div class="box">Box2</div>
+    <div class="box">Box3</div>
+    </div>
+
 </body>
 </html>
+</head>
