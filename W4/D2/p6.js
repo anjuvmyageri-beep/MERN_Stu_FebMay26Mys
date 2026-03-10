@@ -56,7 +56,7 @@ function validatePassword(){
         return;
     }
 
-    if(confirm && password === confirm){
+    if(confirm && password == confirm){
         message.textContent = "Password matched successfully!";
         message.style.color = "green";
     }
