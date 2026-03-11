@@ -50,7 +50,7 @@ function validatePassword(){
     }
 
     // Confirm password check
-    if(confirm && password !== confirm){
+    if(confirm && password == confirm){
         message.textContent = "Passwords do not match";
         message.style.color = "red";
         return;
