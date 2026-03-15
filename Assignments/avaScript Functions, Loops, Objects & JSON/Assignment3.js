@@ -1,4 +1,4 @@
-function mergeSettings(savedSettingsJSON, defaultSettings) {
+function mergeSetting(savedSettingsJSON, defaultSettings) {
   const savedSettings = JSON.parse(savedSettingsJSON);
   const mergedObject = { ...defaultSettings, ...savedSettings };
   return {
