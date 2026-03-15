@@ -1,10 +1,10 @@
-const payrollRecords = [
+const payrollRecord = [
   { name: "Asha", basePay: 30000, bonus: 2000, taxRate: 0.1 },
   { name: "Invalid Case", basePay: -500, bonus: 100, taxRate: 0.05 },
   { name: "Bob", basePay: 45000, bonus: 5000, taxRate: 0.2 }
 ];
 
-const validRecords = payrollRecords.filter(emp => 
+const validRecords = payrollRecord.filter(emp => 
   emp.basePay > 0 && 
   emp.bonus >= 0 && 
   emp.taxRate >= 0 && emp.taxRate <= 1
