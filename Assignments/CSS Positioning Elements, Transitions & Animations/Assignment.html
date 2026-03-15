@@ -7,7 +7,6 @@
     <!DOCTYPE html>
 <style>
 
-/* 1. Sticky Navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -20,14 +19,13 @@
   color: white;
   margin: 10px;
   text-decoration: none;
-  transition: 0.3s;   /* 6. transition effect */
+  transition: 0.3s;   
 }
 
 .navbar a:hover {
   color: yellow;
 }
 
-/* 2. z-index overlapping */
 .box1, .box2 {
   width: 120px;
   height: 120px;
@@ -48,7 +46,6 @@
   z-index: 2;
 }
 
-/* 3. Fixed Footer */
 .footer {
   position: fixed;
   bottom: 0;
@@ -59,7 +56,6 @@
   padding: 10px;
 }
 
-/* 4. Button hover animation */
 .btn {
   margin: 40px;
   padding: 10px 20px;
@@ -74,7 +70,6 @@
   transform: scale(1.2);
 }
 
-/* 5. Bouncing Ball */
 .ball {
   width: 50px;
   height: 50px;
@@ -89,7 +84,6 @@
   to { top: 150px; }
 }
 
-/* 7. House using position relative */
 .house {
   width: 200px;
   height: 200px;
@@ -98,7 +92,7 @@
   position: relative;
   border: 3px solid black;
 }
-/*horizontal*/
+
   
 .roof {
   width: 240px;      
@@ -151,17 +145,16 @@
   <a href="#">Contact</a>
 </div>
 
-<!-- z-index boxes -->
+
 <div class="box1"></div>
 <div class="box2"></div>
 
-<!-- Button -->
 <button class="btn">Hover Me</button>
 
-<!-- Bouncing Ball -->
+
 <div class="ball"></div>
 
-<!-- House -->
+
 <div class="house">
   <div class="roof"></div>
   <div class="door"></div>

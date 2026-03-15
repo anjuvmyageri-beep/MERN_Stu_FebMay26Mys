@@ -1,5 +1,4 @@
 function auditReport(reportJSON) {
-    // 1. Parse the JSON string
     const report = JSON.parse(reportJSON);
     
     let okCount = 0;
