@@ -1,4 +1,4 @@
-function auditReport(reportJSON) {
+function AuditReport(reportJSON) {
     const report = JSON.parse(reportJSON);
     
     let okCount = 0;
@@ -38,4 +38,4 @@ const reportJSON = `{
     }
 }`;
 
-console.log(auditReport(reportJSON));
+console.log(AuditReport(reportJSON));
