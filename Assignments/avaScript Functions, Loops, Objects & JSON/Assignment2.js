@@ -1,4 +1,4 @@
-function invoice(gstRate = 0.18, ...items) {
+function Invoice(gstRate = 0.18, ...items) {
     let subtotal = 0;
 
     for (let i = 0; i < items.length; i++) {
