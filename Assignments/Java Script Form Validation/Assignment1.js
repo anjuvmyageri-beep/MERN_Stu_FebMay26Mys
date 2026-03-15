@@ -46,7 +46,7 @@ delBtn.addEventListener("click", () => {
 
 faq.remove();
 
-if(container.children.length === 0){
+if(container.Children.length === 0){
 emptyMessage.style.display = "block";
 }
 
