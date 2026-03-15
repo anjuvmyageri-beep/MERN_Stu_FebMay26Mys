@@ -26,7 +26,7 @@ error.textContent = "All fields are required";
 return;
 }
 
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const EmailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 if(!emailPattern.test(email)){
 error.textContent = "Enter valid email";
