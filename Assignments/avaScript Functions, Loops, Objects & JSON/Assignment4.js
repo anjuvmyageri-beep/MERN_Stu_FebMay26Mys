@@ -1,4 +1,4 @@
-const getroute = function(role, isLoggedIn) {
+const getroute = function(role, isloggedIn) {
     //LoggedIn
     if (!isLoggedIn) {
         return "/login";
