@@ -1,4 +1,4 @@
-function tagPassword(password) {
+function tagPasswords(password) {
     if (typeof password !== "string") {
         return "INVALID";
     }
