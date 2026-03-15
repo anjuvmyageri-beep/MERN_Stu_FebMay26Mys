@@ -11,7 +11,7 @@ function mergeSetting(savedSettingsJSON, defaultSettings) {
 const defaults = { theme: "white", volume: 20 };
 const saved = '{"theme": "pink"}';
 
-const result = mergeSettings(saved, defaults);
+const result = mergeSetting(saved, defaults);
 const jsonString = JSON.stringify(result);
 console.log(jsonString);
 console.log(result);
