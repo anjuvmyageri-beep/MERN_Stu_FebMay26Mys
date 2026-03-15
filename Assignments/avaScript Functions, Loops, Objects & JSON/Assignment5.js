@@ -8,7 +8,7 @@ const wallets = {
   withdraw: function(amount) {
   }
 };
-wallet.deposit(500);
-wallet.withdraw(200);
+wallets.deposit(500);
+wallets.withdraw(200);
 
-console.log(wallet);
+console.log(wallets);
