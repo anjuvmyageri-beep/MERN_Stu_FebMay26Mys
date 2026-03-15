@@ -1,4 +1,4 @@
-const wallet = {
+const wallets = {
   owner: "Anjali",
   balance:2000,
   lastTransaction: null,
