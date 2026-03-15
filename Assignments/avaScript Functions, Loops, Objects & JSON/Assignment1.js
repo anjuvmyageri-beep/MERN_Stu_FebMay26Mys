@@ -1,8 +1,8 @@
-function tagPasswords(password) {
-    if (typeof password !== "string") {
+function tagPasswords(passwords) {
+    if (typeof passwords !== "string") {
         return "INVALID";
     }
-    const len = password.length;
+    const len = passwords.length;
     if (len < 8) {
         return "WEAK";
     }
@@ -12,7 +12,7 @@ function tagPasswords(password) {
 
     
     for (let i = 0; i < len; i++) {
-        const char = password[i];
+        const char = passwords[i];
 
     }
 
@@ -31,7 +31,7 @@ function tagPasswords(password) {
 }
 
 
-console.log(tagPassword("abc12345"));    
-console.log(tagPassword("longPass12345")); 
-console.log(tagPassword("short1"));      
-console.log(tagPassword(12345678));
+console.log(tagPasswords("abc12345"));    
+console.log(tagPasswords("longPass12345")); 
+console.log(tagPasswords("short1"));      
+console.log(tagPasswords(12345678));
