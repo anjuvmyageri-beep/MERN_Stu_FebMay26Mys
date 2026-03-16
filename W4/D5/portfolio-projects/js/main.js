@@ -1,0 +1,11 @@
+document.addEventListener("DOMContentLoaded",
+    function(){
+        //Rendernskills
+        renderSkills();
+        initModal();
+        initContactValidation();
+        initThemeToggle();
+        projectSearch();
+        socialLinks();
+    }
+)
