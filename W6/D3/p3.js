@@ -3,6 +3,18 @@ const fs=require("fs");
 const path=require("path");
 
 const filepath=path.join(__dirname,"async-note.txt");
+//Append
+fs.appendFile(
+    filepath,
+    "New text added using fs.appendFile.",
+    function(writeError){
+        if(writeError){
+            console.log("Append error:",writeError.message);
+            return;
+        }
+        console.log("Append written synchronously.");
+    }
+);
 
 //To write to a file
 fs.writeFile(
