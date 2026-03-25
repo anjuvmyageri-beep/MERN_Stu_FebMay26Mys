@@ -1,18 +1,20 @@
 //Reading & writing files synchronously
+const fs = require("fs");
+const path = require("path");
+const filePath = path.join(__dirname,"sync-note.txt");
+//fs.writeFileSync(filePath,"This file was written using writeFileSync().\nSynchronous operation block execution");
 
-const fs=require("fs");
-const path=require("path");
-
-const filepath=path.join(__dirname,"sync-notEqual.txt");
-
-//syntax for function usage in a module
-//ModuleName.functionName()
-
-fs.writeFileSync(filepath,"This file was written using  writeFile");
-
+//Append to a file
+fs.appendFile(filePath,"New text  added using fs.appendFile.",
+    function(error){
+        if(error){
+            console.log("Append error:",error.message);
+            return;
+        }
+        console.log("File content appended");
+    }
+);
 console.log("File written synchronously.");
-
-const content=fs.readFileSync(filepath,"utf-8");
-
-console.log("File read synchronous");
-console.log(content);
+const content = fs.readFileSync(filePath,"utf-8");
+console.log("file read synchronously.");
+console.log("file content:/n",content);
