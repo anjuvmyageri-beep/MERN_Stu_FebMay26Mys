@@ -1,10 +1,10 @@
-//Introduction to the NodeJS File system(fs)built-in module
+// Introduction to the NodeJS File System (fs) built-in module
 
-const fs=require("fs");
-const fsPromises=require("fs/promise");
+const fs = require("fs");
+const fsPromises = require("fs/promises");
 
-console.log("Type of fs.readfile:",typeof fs.readFile);
-console.log("Type of fs.written:",typeof fs.writeFile);
+console.log("Type of fs.readFile: ", typeof fs.readFile);
+console.log("Type of fs.writeFile: ", typeof fs.writeFile);
 
-console.log("Type of fspromises.readfile:",typeof fsPromises.readFile);
-console.log("Type of fspromises.written:",typeof fsPromises.writtenFile);
+console.log("Type of fsPromises.readFile: ", typeof fsPromises.readFile);
+console.log("Type of fsPromises.writeFile: ", typeof fsPromises.writeFile);
