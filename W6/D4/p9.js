@@ -1,0 +1,29 @@
+const http = require("http");
+
+const server = http.createServer(function (req, res) {
+
+    if (req.method === "GET" && req.url.startsWith("/users")) {
+
+        // Split the URL path
+        const parts = req.url.split('/');
+        const userId = parts[2]; 
+
+        res.writeHead(200, { "Content-Type": "application/json" });
+
+        res.end(JSON.stringify({
+            route: "/users/:id",
+            userId: userId
+        }));
+
+        return;
+    }
+
+    res.writeHead(404, { "Content-Type": "application/json" });
+    res.end(JSON.stringify({
+        message: "Route not found"
+    }));
+});
+
+server.listen(3001, () => {
+    console.log("Server running at http://localhost:3001");
+});
