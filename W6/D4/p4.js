@@ -1,4 +1,4 @@
-//Handling fidderent GET routes
+//Handling fidderent GET route
 
 const http = require("http");
 
